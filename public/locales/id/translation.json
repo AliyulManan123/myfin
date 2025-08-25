@@ -1,0 +1,61 @@
+{
+  "common": {
+    "seeMore": "Lihat Selengkapnya",
+    "date": "Tanggal",
+    "description": "Deskripsi",
+    "amount": "Jumlah",
+    "noDataToDisplay": "Tidak ada data untuk ditampilkan",
+    "value": "Nilai",
+    "actions": "Aksi",
+    "cancel": "Batal",
+    "add": "Tambah",
+    "search": "Cari",
+    "delete": "Hapus",
+    "edit": "Ubah",
+    "account": "Akun",
+    "credit": "Kredit",
+    "debit": "Debit",
+    "type": "Tipe",
+    "total": "Total",
+    "goBack": "Kembali",
+    "update": "Perbarui",
+    "confirm": "Konfirmasi",
+    "yes": "Ya",
+    "no": "Tidak",
+    "theme": "Tema",
+    "language": "Bahasa",
+    "currency": "Mata Uang"
+  },
+  "sidebar": {
+    "dashboard": "Dasbor",
+    "transactions": "Transaksi",
+    "accounts": "Akun",
+    "categories": "Kategori",
+    "entities": "Entitas",
+    "rules": "Aturan",
+    "budgets": "Anggaran",
+    "investments": "Investasi",
+    "statistics": "Statistik",
+    "tags": "Tag"
+  },
+  "topBar": {
+    "operatingFunds": "Dana Operasional",
+    "investing": "Investasi",
+    "debt": "Utang",
+    "netWorth": "Kekayaan Bersih"
+  },
+  "dashboard": {
+    "newTransaction": "Transaksi Baru",
+    "newBudget": "Anggaran Baru",
+    "seeTransactions": "Lihat Transaksi",
+    "seeStats": "Lihat Statistik",
+    "recentTransactions": "Transaksi Terkini",
+    "current": "Saat Ini",
+    "remaining": "Sisa",
+    "lastUpdate": "Pembaruan Terakhir",
+    "monthlyOverview": "Gambaran Bulanan",
+    "incomeDistribution": "Distribusi Pemasukan",
+    "expenseDistribution": "Distribusi Pengeluaran",
+    "monthlySavings": "Tabungan Bulanan"
+  }
+}
