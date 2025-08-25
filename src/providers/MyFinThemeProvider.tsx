@@ -22,6 +22,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import 'dayjs/locale/pt.js';
 import 'dayjs/locale/en.js';
+import 'dayjs/locale/id.js';
 import { UserContextProvider } from './UserProvider.tsx';
 
 type SupportedLocales = keyof typeof locales;
@@ -49,7 +50,7 @@ const MyFinThemeProvider = ({ children }: { children: ReactNode }) => {
   );
 
   const [locale, setLocale] = useState<SupportedLocales>('ptPT');
-  const [dayJsLocale, setDayJsLocale] = useState<'en' | 'pt'>('pt');
+  const [dayJsLocale, setDayJsLocale] = useState<'en' | 'pt' | 'id'>('pt'); // <-- Tambahkan 'id'
   const theme = useMemo(
     () => createTheme(generateGlobalTheme(mode), locales[locale]),
     [mode, locale],
@@ -62,6 +63,13 @@ const MyFinThemeProvider = ({ children }: { children: ReactNode }) => {
         setLocale('ptPT');
         setYupLocale(pt);
         setDayJsLocale('pt');
+        break;
+      case 'id': // <-- Tambahkan blok ini
+        setLocale('idID');
+        // Untuk yup-locales, mungkin perlu kustomisasi jika tidak ada support bawaan
+        // Untuk sementara kita bisa pakai 'en' sebagai fallback
+        setYupLocale(en); 
+        setDayJsLocale('id');
         break;
       default:
         setLocale('enUS');
