@@ -93,22 +93,27 @@ const Profile = () => {
             </AccordionSummary>
             <AccordionDetails>
               <FormControl>
-                <RadioGroup
-                  value={language}
-                  name="radio-buttons-group"
-                  onChange={handleLanguageChange}
-                >
-                  <FormControlLabel
-                    value="pt"
-                    control={<Radio />}
-                    label="Português (pt-PT)"
-                  />
-                  <FormControlLabel
-                    value="en"
-                    control={<Radio />}
-                    label="English"
-                  />
-                </RadioGroup>
+<RadioGroup
+  value={language}
+  name="radio-buttons-group"
+  onChange={handleLanguageChange}
+>
+  <FormControlLabel
+    value="pt"
+    control={<Radio />}
+    label="Português (pt-PT)"
+  />
+  <FormControlLabel
+    value="en"
+    control={<Radio />}
+    label="English"
+  />
+  <FormControlLabel // <-- Tambahkan ini
+    value="id"
+    control={<Radio />}
+    label="Bahasa Indonesia"
+  />
+</RadioGroup>
               </FormControl>
             </AccordionDetails>
           </Accordion>
